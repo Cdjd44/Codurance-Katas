@@ -4,16 +4,21 @@ namespace Kata2
 {
     public class Year
     {
-        public Year()
+        private readonly int _year;
+        public Year(int year)
         {
+            _year = year;
         }
 
-        public bool IsLeap(int year)
+        public bool IsLeap()
         {
-            if(year % 100 == 0 && year % 400 > 0) { return false; }
-            if(year % 400 == 0) { return true; }
-            if(year % 4 == 0) { return true; }
-            return false;
+            //If DivideBy(100) is True then do DivideBy(400), else do DivideBy(4)
+            return DivideBy(100) ? DivideBy(400) : DivideBy(4);
+        }
+
+        public bool DivideBy(int value)
+        {
+            return _year % value == 0;
         }
     }
 }
