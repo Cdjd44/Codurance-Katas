@@ -1,1 +1,1 @@
-# Codurance
+# Codurance-Katas
