@@ -31,5 +31,11 @@ namespace Kata1_Tests
         {
             Assert.AreEqual("Buzz", new FizzBuzz().convert(5));
         }
+
+        [TestMethod]
+        public void convert_15_to_FizzBuzz()
+        {
+            Assert.AreEqual("FizzBuzz", new FizzBuzz().convert(15));
+        }
     }
 }
