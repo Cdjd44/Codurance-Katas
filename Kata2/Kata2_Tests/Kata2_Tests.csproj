@@ -13,4 +13,8 @@
     <PackageReference Include="coverlet.collector" Version="3.1.0" />
   </ItemGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\Kata2\Kata2.csproj" />
+  </ItemGroup>
+
 </Project>

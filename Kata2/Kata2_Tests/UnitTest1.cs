@@ -1,3 +1,4 @@
+using Kata2;
 using Microsoft.VisualStudio.TestTools.UnitTesting;
 
 namespace Kata2_Tests
@@ -6,10 +7,9 @@ namespace Kata2_Tests
     public class UnitTest1
     {
         [TestMethod]
-        public void number_is_divisable_by_4()
+        public void Is_Leap_Year()
         {
-            var year = new Year(2006);
-            Assert.AreEqual(year.IsLeap(), Is.True);
+            Assert.AreEqual(true, new Year().IsLeap(2016));
         }
     }
 }
